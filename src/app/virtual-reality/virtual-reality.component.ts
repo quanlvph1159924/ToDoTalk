@@ -106,7 +106,6 @@ export class VirtualRealityComponent implements OnInit {
     updateContentDetail(){
     this.contentModelObj.content = this.formValue.value.content;
       console.log("Content", this.contentModelObj.content);
-
     this.api.updateContent(this.contentModelObj, this.contentModelObj.id)
     .subscribe(res=>{
       alert("Update Content Success!");
